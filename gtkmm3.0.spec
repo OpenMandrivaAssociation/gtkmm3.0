@@ -1,12 +1,12 @@
-%define version 2.20.3
+%define version 2.90.2
 %define release %mkrel 1
 
 %define glibmm_version 2.24.0
-%define pangomm_version 2.25.1
-%define gtk_version 2.19.4
+%define pangomm_version 2.26
+%define gtk_version 2.90.2
 
 %define pkgname	gtkmm
-%define api_version 2.4
+%define api_version 3.0
 %define major 1
 %define libname_orig %mklibname %{pkgname} %{api_version}
 %define libname %mklibname %{pkgname} %{api_version} %{major}
@@ -23,7 +23,7 @@ Group:		System/Libraries
 URL:		http://gtkmm.sourceforge.net/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
-BuildRequires:	gtk+2-devel >= %{gtk_version}
+BuildRequires:	gtk+3-devel >= %{gtk_version}
 BuildRequires:	glibmm2.4-devel >= %{glibmm_version}
 BuildRequires:	atk-devel >= 1.9.0
 BuildRequires:	cairomm-devel  >= 1.2.2
@@ -58,7 +58,6 @@ Group:		Development/GNOME and GTK+
 Requires:	%{libname} = %{version}
 Provides:	%{pkgname}%{api_version}-devel = %{version}-%{release}
 Provides:	%{libname_orig}-devel = %{version}-%{release}
-Requires:	gtk+2-devel >= %{gtk_version}
 Requires:	glibmm2.4-devel >= %{glibmm_version}
 Obsoletes: %mklibname -d %{pkgname} %{api_version} %{major}
 
@@ -142,5 +141,3 @@ rm -rf %{buildroot}
 %defattr(-, root, root)
 %doc %{_datadir}/doc/gtkmm-%{api_version}
 %doc %{_datadir}/devhelp/books/*
-
-
