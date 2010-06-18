@@ -1,4 +1,4 @@
-%define version 2.90.2
+%define version 2.90.3
 %define release %mkrel 1
 
 %define glibmm_version 2.24.0
@@ -130,7 +130,6 @@ rm -rf %{buildroot}
 %{_libdir}/gtkmm-%{api_version}
 %{_libdir}/gdkmm-%{api_version}
 %{_libdir}/pkgconfig/*.pc
-%_datadir/gtkmm-%{api_version}
 
 %files -n %{libnamestaticdev}
 %defattr(-, root, root)
