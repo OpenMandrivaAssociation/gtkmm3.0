@@ -1,4 +1,4 @@
-%define version 2.90.3
+%define version 2.90.3.1
 %define release %mkrel 1
 
 %define glibmm_version 2.24.0
@@ -25,7 +25,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 BuildRequires:	gtk+3-devel >= %{gtk_version}
 BuildRequires:	glibmm2.4-devel >= %{glibmm_version}
-BuildRequires:	atk-devel >= 1.9.0
+BuildRequires:	atkmm1.6-devel
 BuildRequires:	cairomm-devel  >= 1.2.2
 BuildRequires:	pangomm2.4-devel >= %pangomm_version
 
@@ -116,7 +116,6 @@ rm -rf %{buildroot}
 %files -n %{libname}
 %defattr(-, root, root)
 %doc AUTHORS COPYING NEWS README
-%{_libdir}/libatkmm-1.6.so.%{major}*
 %{_libdir}/libgdkmm-%{api_version}.so.%{major}*
 %{_libdir}/libgtkmm-%{api_version}.so.%{major}*
 
