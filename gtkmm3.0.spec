@@ -1,4 +1,4 @@
-%define version 2.90.4.0
+%define version 2.90.5
 %define release %mkrel 1
 
 %define glibmm_version 2.24.0
@@ -26,7 +26,7 @@ Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}
 BuildRequires:	gtk+3-devel >= %{gtk_version}
 BuildRequires:	glibmm2.4-devel >= %{glibmm_version}
 BuildRequires:	atkmm1.6-devel
-BuildRequires:	cairomm-devel  >= 1.2.2
+BuildRequires:	cairomm-devel  >= 1.9.1
 BuildRequires:	pangomm2.4-devel >= %pangomm_version
 
 %description
