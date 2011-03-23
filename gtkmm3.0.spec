@@ -1,9 +1,9 @@
-%define version 2.90.7
+%define version 2.99.6
 %define release %mkrel 1
 
-%define glibmm_version 2.24.0
-%define pangomm_version 2.26
-%define gtk_version 2.90.2
+%define glibmm_version 2.27.93
+%define pangomm_version 2.27.1
+%define gtk_version 3.0.0
 
 %define pkgname	gtkmm
 %define api_version 3.0
@@ -25,8 +25,8 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.bz2
 BuildRequires:	gtk+3-devel >= %{gtk_version}
 BuildRequires:	glibmm2.4-devel >= %{glibmm_version}
-BuildRequires:	atkmm1.6-devel
-BuildRequires:	cairomm-devel  >= 1.9.1
+BuildRequires:	atkmm1.6-devel >= 2.22.2
+BuildRequires:	cairomm-devel  >= 1.9.2
 BuildRequires:	pangomm2.4-devel >= %pangomm_version
 
 %description
@@ -34,7 +34,6 @@ Gtkmm provides a C++ interface to the GTK+ GUI library. Gtkmm2 wraps GTK+ 2.
 Highlights include typesafe callbacks, widgets extensible via inheritance
 and a comprehensive set of widget classes that can be freely combined to
 quickly create complex user interfaces.
-
 
 %package	-n %{libname}
 Summary:	C++ interface for popular GUI library gtk+
