@@ -1,9 +1,9 @@
-%define version 3.0.1
+%define version 3.2.0
 %define release %mkrel 1
 
-%define glibmm_version 2.27.93
+%define glibmm_version 2.30.0
 %define pangomm_version 2.27.1
-%define gtk_version 3.0.0
+%define gtk_version 3.2.0
 
 %define pkgname	gtkmm
 %define api_version 3.0
