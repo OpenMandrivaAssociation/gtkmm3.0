@@ -22,6 +22,7 @@ BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(giomm-2.4)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(pangomm-1.4)
+BuildRequires:	doxygen
 
 %description
 Gtkmm provides a C++ interface to the GTK+ GUI library. Gtkmm2 wraps GTK+ 2.
