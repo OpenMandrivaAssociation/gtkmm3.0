@@ -7,13 +7,13 @@
 
 Name:		%{pkgname}%{api_version}
 Summary:	C++ interface for popular GUI library gtk+
-Version:	3.4.1
+Version:	3.4.2
 Release:	1
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
 Group:		System/Libraries
 URL:		http://gtkmm.sourceforge.net/
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{pkgname}/%{pkgname}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtkmm/3.4/%{pkgname}-%{version}.tar.xz
 
 BuildRequires:	xsltproc
 BuildRequires:	pkgconfig(atkmm-1.6)
