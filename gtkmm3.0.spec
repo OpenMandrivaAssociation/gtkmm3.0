@@ -7,10 +7,10 @@
 %define libgdkmm %mklibname gdkmm %{api} %{major}
 %define devname %mklibname -d %{pkgname} %{api}
 
-Name:		%{pkgname}%{api}
 Summary:	C++ interface for popular GUI library gtk+
-Version:	3.4.2
-Release:	2
+Name:		%{pkgname}%{api}
+Version:	3.8.1
+Release:	1
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
 Group:		System/Libraries
@@ -59,8 +59,8 @@ linked with %{pkgname}.
 %package	-n %{devname}
 Summary:	Headers and development files of %{pkgname}
 Group:		Development/GNOME and GTK+
-Requires:	%{libname} = %{version}
-Requires:	%{libgdkmm} = %{version}
+Requires:	%{libname} = %{version}-%{release}
+Requires:	%{libgdkmm} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 Obsoletes:	%{name}-doc < 3.4.2-2
 
