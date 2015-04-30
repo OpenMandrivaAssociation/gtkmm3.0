@@ -1,5 +1,6 @@
 removed_sources:
+  gtkmm-3.14.0.tar.xz: cc3948dcb9a83e4c55b0fa37535eb52d61531286
   gtkmm-3.4.2.tar.xz: ae8a9e7cfce620887bcff6cb3b3e4afc8ec25ea6
   gtkmm-3.8.1.tar.xz: 15feac2365e59aad5a4cdf8ffaee28155e46d726
 sources:
-  gtkmm-3.14.0.tar.xz: cc3948dcb9a83e4c55b0fa37535eb52d61531286
+  gtkmm-3.16.0.tar.xz: 463df2b5bf58814021b99d0400fff7e1ca5703e5
