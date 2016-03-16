@@ -1,5 +1,6 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 %define _disable_rebuild_configure 1
+%define _disable_lto 1
 
 %define pkgname	gtkmm
 %define api	3.0
@@ -11,7 +12,7 @@
 Summary:	C++ interface for popular GUI library gtk+
 Name:		%{pkgname}%{api}
 Version:	3.18.0
-Release:	2
+Release:	3
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
 Group:		System/Libraries
