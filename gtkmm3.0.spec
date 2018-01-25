@@ -11,8 +11,8 @@
 
 Summary:	C++ interface for popular GUI library gtk+
 Name:		%{pkgname}%{api}
-Version:	3.18.0
-Release:	4
+Version:	3.22.2
+Release:	1
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
 Group:		System/Libraries
