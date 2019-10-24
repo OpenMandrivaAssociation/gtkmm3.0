@@ -89,7 +89,7 @@ when trying to develop or compile applications which need %{pkgname}.
 %{_libdir}/libgtkmm-%{api}.so.%{major}*
 
 %files -n %{devname}
-%doc AUTHORS COPYING NEWS README PORTING ChangeLog
+%doc AUTHORS COPYING NEWS README ChangeLog
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/gtkmm-%{api}
