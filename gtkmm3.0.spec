@@ -11,7 +11,7 @@
 
 Summary:	C++ interface for popular GUI library gtk+
 Name:		%{pkgname}%{api}
-Version:	3.24.1
+Version:	3.24.2
 Release:	1
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
@@ -74,13 +74,13 @@ when trying to develop or compile applications which need %{pkgname}.
 %setup -qn %{pkgname}-%{version}
 
 %build
-%configure2_5x \
+%configure \
 	--disable-static
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libgdkmm}
 %{_libdir}/libgdkmm-%{api}.so.%{major}*
