@@ -11,14 +11,15 @@
 
 Summary:	C++ interface for popular GUI library gtk+
 Name:		%{pkgname}%{api}
-Version:	3.24.2
-Release:	2
+Version:	3.24.3
+Release:	1
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
 Group:		System/Libraries
 Url:		http://gtkmm.sourceforge.net/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gtkmm/%{url_ver}/%{pkgname}-%{version}.tar.xz
 
+BuildRequires:	meson
 BuildRequires:	doxygen
 BuildRequires:	xsltproc
 BuildRequires:	pkgconfig(atkmm-1.6)
@@ -74,13 +75,12 @@ when trying to develop or compile applications which need %{pkgname}.
 %setup -qn %{pkgname}-%{version}
 
 %build
-%configure \
-	--disable-static
+%meson
 
-%make_build
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %files -n %{libgdkmm}
 %{_libdir}/libgdkmm-%{api}.so.%{major}*
@@ -95,6 +95,3 @@ when trying to develop or compile applications which need %{pkgname}.
 %{_libdir}/gtkmm-%{api}
 %{_libdir}/gdkmm-%{api}
 %{_libdir}/pkgconfig/*.pc
-%doc %{_datadir}/doc/gtkmm-%{api}
-%doc %{_datadir}/devhelp/books/*
-
