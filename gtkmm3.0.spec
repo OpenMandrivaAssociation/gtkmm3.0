@@ -95,6 +95,3 @@ when trying to develop or compile applications which need %{pkgname}.
 %{_libdir}/gtkmm-%{api}
 %{_libdir}/gdkmm-%{api}
 %{_libdir}/pkgconfig/*.pc
-%doc %{_datadir}/doc/gtkmm-%{api}
-%doc %{_datadir}/devhelp/books/*
-
