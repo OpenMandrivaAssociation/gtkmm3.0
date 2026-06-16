@@ -11,8 +11,8 @@
 
 Summary:	C++ interface for popular GUI library gtk+
 Name:		%{pkgname}%{api}
-Version:	3.24.10
-Release:	3
+Version:	3.24.11
+Release:	1
 #gw lib is LGPL, tool is GPL
 License:	LGPLv2+ and GPLv2+
 Group:		System/Libraries
@@ -72,7 +72,7 @@ This package contains the headers and development files that are needed,
 when trying to develop or compile applications which need %{pkgname}.
 
 %prep
-%setup -qn %{pkgname}-%{version}
+%autosetup -n %{pkgname}-%{version} -p1
 
 %build
 %meson
